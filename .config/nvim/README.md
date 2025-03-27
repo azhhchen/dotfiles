@@ -28,7 +28,6 @@ This setup is designed for **modern, efficient, and minimalistic** development. 
 - 🤝 **Efficient Statusline** powered by `lualine.nvim`  
 - 🎭 **Improved UI Feedback** via `noice.nvim`  
 
----
 
 ## 🛠 Installation
 
@@ -50,7 +49,6 @@ Launch Neovim with this configuration:
 NVIM_APPNAME=azhhchen/dotfiles/.config/nvim nvim
 ```
 
----
 
 ## 🛆 Plugin Overview
 
@@ -97,14 +95,12 @@ NVIM_APPNAME=azhhchen/dotfiles/.config/nvim nvim
 ### 🛠 Utility
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)  
 
----
 
 ## 🌐 Language Servers
 
 Currently Configured:
 - **Lua** (using `lua-language-server`)  
 
----
 
 ## 📝 Notes & Contribution
 
