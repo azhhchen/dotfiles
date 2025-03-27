@@ -1,0 +1,30 @@
+[user]
+	name = Hung Hsun Chen
+	email = hunghsun@mail.com
+[alias]
+    aa = add --all
+    ap = add --patch
+    ba = branch -a
+    bm = branch --merged
+    bn = branch --no-merged
+    ca = commit -a
+    cm = commit -m
+    co = checkout
+    df = diff
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+    st = status
+[color]
+    ui = auto
+[core]
+    excludesfile = ~/.gitignore
+    editor = nvim
+    ignorecase = false
+[diff]
+    tool = nvimdiff
+[github]
+    user = azhhchen
+[hub]
+    protocol = https
+[push]
+    default = simple

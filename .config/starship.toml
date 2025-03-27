@@ -1,0 +1,78 @@
+command_timeout = 1000
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$fill\
+$all\
+$line_break\
+$character
+"""
+
+palette = "solarized_osaka"
+
+[palettes.solarized_osaka]
+base03 = "#002b36"
+base02 = "#073642"
+base01 = "#586e75"
+base00 = "#657b83"
+base0 = "#839496"
+base1 = "#93a1a1"
+base2 = "#eee8d5"
+base3 = "#fdf6e3"
+yellow = "#b58900"
+orange = "#cb4b16"
+red = "#dc322f"
+magenta = "#d33682"
+violet = "#6c71c4"
+blue = "#268bd2"
+cyan = "#2aa198"
+green = "#859900"
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+style = "fg:yellow"
+format = '[ $duration]($style)'
+
+[git_branch]
+symbol = "[](black) "
+style = "fg:orange bg:black"
+format =  '[$symbol$branch]($style)[](black)'
+
+[git_status]
+style = "fg:magenta"
+format = ' [($all_status$ahead_behind )]($style)'
+
+[c]
+symbol = "[](black) "
+style = "fg:blue bg:black"
+format =  '[$symbol$version]($style)[](black) '
+detect_extensions = ['c', 'h', 'cpp']
+
+[python]
+symbol = "[](black) "
+style = "fg:yellow bg:black"
+format =  '[$symbol$version]($style)[](black) '
+
+[lua]
+symbol = "[](black)"
+style = "fg:blue bg:black"
+format =  '[$symbol Lua]($style)[](black) '
+
+[rust]
+symbol = "[](black) "
+style = "fg:orange bg:black"
+format =  '[$symbol$version]($style)[](black) '
+
+[nodejs]
+symbol = "[](black) "
+style = "fg:green bg:black"
+format =  '[$symbol$version]($style)[](black) '
