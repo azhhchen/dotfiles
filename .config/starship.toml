@@ -76,3 +76,6 @@ format =  '[$symbol$version]($style)[](black) '
 symbol = "[](black) "
 style = "fg:green bg:black"
 format =  '[$symbol$version]($style)[](black) '
+
+[package]
+disabled = true

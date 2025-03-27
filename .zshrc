@@ -1,6 +1,6 @@
 ## Don't let macOS Terminal.app load any setting
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
-  alias nvim='nvim --clean' -- Neovim without any configuration
+  alias nvim='nvim --clean' # Neovim without any configuration
   return
 fi
 
