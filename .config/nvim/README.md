@@ -12,9 +12,9 @@ This setup is designed for **modern, efficient, and minimalistic** development. 
 
 ### ⚡ Performance
 > [!NOTE]
-> **Equipment:** 2019 MacBook Pro 16' (i9-9900HK)
+> **Equipment:** 2019 MacBook Pro 16' (i9-9900HK) / Thinkpad X1 Carbon 6th gen (i7-8550U)
 - **Startup Time:**  
-  - **~40ms** (without opening files)  
+  - **25~40ms** (without opening files)  
   - **70~150ms** (depending on the file type)  
 
 ### ✨ Features
