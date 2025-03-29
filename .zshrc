@@ -6,7 +6,6 @@ fi
 
 ## Variable
 export EDITOR="nvim"
-export TERM="xterm-ghostty"
 
 ## PATH
 export PATH="$PATH:$HOME/.script"       # For custom script
