@@ -26,11 +26,11 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 
 ## Syntax highlight /  Autosuggestion
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## Starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 ## FZF
 source <(fzf --zsh)
