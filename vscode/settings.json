@@ -33,6 +33,7 @@
     "vim.useSystemClipboard": true,
     "workbench.activityBar.location": "hidden",
     "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Solarized Osaka",
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
