@@ -1,8 +1,5 @@
 # dotfiles/.config/nvim
 
-> [!CAUTION]
->  I'm considering switching to LazyVim to focus on coding, so there may be breaking changes soon.
-
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
