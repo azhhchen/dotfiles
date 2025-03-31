@@ -1,5 +1,8 @@
 # dotfiles/.config/nvim
 
+> [!CAUTION]
+> Starting from Neovim version 0.11.0 and above, `nvim-lspconfig` is no longer required. A migration with a breaking change will be implemented in the future.
+
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
