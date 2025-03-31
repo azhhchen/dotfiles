@@ -25,7 +25,7 @@ return { -- lspconfig
   {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
-    -- enabled = false, -- For debugging
+    enabled = false, -- For debugging
     dependencies = {
       "folke/snacks.nvim",
       "saghen/blink.cmp",
