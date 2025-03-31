@@ -1,10 +1,6 @@
 # Window
 window-inherit-working-directory = true
 window-save-state = always
-window-width = 115
-window-height = 40
-window-padding-x = 10
-window-padding-y = 10
 window-padding-balance = true
 window-colorspace = display-p3
 
@@ -16,7 +12,7 @@ background = #031219
 
 # Font
 font-family = FiraCode Nerd Font Mono
-font-size = 18
+font-size = 13
 
 # Cursor/Mouse
 cursor-style = block
