@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 "=== UI ==="
+Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'
 
