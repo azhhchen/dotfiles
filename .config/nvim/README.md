@@ -102,7 +102,8 @@ NVIM_APPNAME=azhhchen/dotfiles/.config/nvim nvim
 ## 🌐 Language Servers
 
 Currently Configured:
-- **Lua** (using `lua-language-server`)  
+- **Lua** (using `lua-language-server`)
+- **Rust** (`rust-analyzer`)
 
 
 ## 📝 Notes & Contribution
