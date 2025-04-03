@@ -5,7 +5,6 @@
 local M = {}
 
 function M.patient()
-  ---@type table?
   local count = 0
   local frozen = false
   local timer = assert(vim.uv.new_timer())
@@ -23,6 +22,11 @@ function M.patient()
 
   for _, key in ipairs({ "h", "j", "k", "l", "+", "-" }) do
     vim.keymap.set("n", key, function()
+      -- Exclude some filetypes
+      if not vim.bo.modifiable or vim.bo.buftype == "nofile" then
+        return key
+      end
+
       if frozen then
         return ""
       end
