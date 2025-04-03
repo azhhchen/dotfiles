@@ -107,6 +107,7 @@ return { -- lspconfig
           map("K", vim.lsp.buf.hover, "Hover")
           map("<leader>ca", vim.lsp.buf.code_action, "Code Action", { "n", "x" })
           map("<leader>cr", vim.lsp.buf.rename, "Rename")
+          map("<leader>cf", vim.lsp.buf.format, "Format")
 
         end,
       })
