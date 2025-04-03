@@ -1,31 +1,8 @@
--- LSP configuration
-local lsp_server = {
-  lua_ls = {
-    settings = {
-      Lua = {
-        diagnostic = {
-          globals = { "vim" },
-        },
-        workspace = {
-          -- make language server aware of runtime files
-          library = {
-            [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-            [vim.fn.stdpath("config") .. "/lua"] = true,
-          },
-        },
-        completion = {
-          callSnippet = "Replace",
-        },
-      },
-    },
-  },
-}
-
 return { -- lspconfig
   {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
-    enabled = false, -- For debugging
+    -- enabled = false, -- For debugging
     dependencies = {
       "folke/snacks.nvim",
       "saghen/blink.cmp",
@@ -55,7 +32,28 @@ return { -- lspconfig
           },
         },
       },
-      servers = lsp_server,
+      servers = {
+        lua_ls = {
+          settings = {
+            Lua = {
+              diagnostic = {
+                globals = { "vim" },
+              },
+              workspace = {
+                -- make language server aware of runtime files
+                library = {
+                  [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+                  [vim.fn.stdpath("config") .. "/lua"] = true,
+                },
+              },
+              completion = {
+                callSnippet = "Replace",
+              },
+            },
+          },
+        },
+        rust_analyzer = {},
+      },
     },
     config = function(_, opts)
 
@@ -124,12 +122,8 @@ return { -- lspconfig
     opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
-        -- LSP
         "lua-language-server",
-        -- Linter
-        -- Formatter
-        "stylua",
-        "shfmt",
+        "rust-analyzer",
       },
     },
     config = function(_, opts)
