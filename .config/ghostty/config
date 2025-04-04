@@ -6,12 +6,12 @@ window-colorspace = display-p3
 
 # Color
 theme = "Solarized Dark - Patched"
-background-opacity = 0.9
+background-opacity = 0.8
 background-blur = 20
 background = #031219
 
 # Font
-font-family = FiraCode Nerd Font Mono
+font-family = FiraCode Nerd Font
 font-size = 13
 
 # Cursor/Mouse
