@@ -43,6 +43,7 @@ ehthumbs.db
 
 # Vim / Neovim
 .vim/plugged/
+.vim/autoload/plug.vim
 .vim/bundle/
 .vimrc_sample
 .luarc.json
