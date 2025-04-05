@@ -39,7 +39,7 @@ While **Neovim** is a great alternative to Vim, I still have a vim configuration
 ## Plugins
 - vim-plug: plugin manager
 - autopairs: Nothing but auto pairs bracket
-- vim-airline: Better statusline
+- lightline: Minimal statusline
 - vim-easycomplete: Minimalist autocomplete
 - vim-vinegar: Better netrw
 - vim-surround: Enhance coding experience
