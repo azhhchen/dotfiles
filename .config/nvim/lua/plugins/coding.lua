@@ -58,7 +58,7 @@ return {
       }
     },
     keys = {
-      { "<leader>/", desc = "Comment", mode = "x" },
+      { "<leader>/", desc = "Comment" },
       { "<leader>//", desc = "Comment toggle current line" }
     },
     opts = {
