@@ -58,7 +58,7 @@ return {
       }
     },
     keys = {
-      { "<leader>/", desc = "Comment" },
+      { "<leader>/", desc = "Comment", mode = { "n" , "v" } },
       { "<leader>//", desc = "Comment toggle current line" }
     },
     opts = {
