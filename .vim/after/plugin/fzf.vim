@@ -29,14 +29,13 @@ command! -bang ProjectFiles call fzf#vim#files('~/Documents/Development', {'opti
 command! -bang PluginFiles call fzf#vim#files('~/.vim', {'options': ['--layout=reverse', '--info=inline', '--preview', 'bat {}']}, <bang>0)
 
 " Keymap
-nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>fb :Buffer<CR>
+nnoremap <leader>fc :Commits<CR>
 nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :GFiles<CR>
+nnoremap <leader>fG :GFiles?<CR>
+nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>fp :ProjectFiles<CR>
 nnoremap <leader>fP :PluginFiles<CR>
-nnoremap <leader>fg :GFiles<CR>
-nnoremap <leader>f? :GFiles?<CR>
 nnoremap <leader>ft :Tags<CR>
-nnoremap <leader>fa :Ag<CR>
-nnoremap <leader>fc :Commits<CR>
-
+nnoremap <leader>f/ :Rg<CR>
