@@ -34,7 +34,7 @@ alias diff='diff --color=auto'
 
 ## FZF
 source <(fzf --zsh)
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude={.git,plugged,.vscode,.sass-cache,.zsh_sessions,node_modules,build}"
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
