@@ -1,4 +1,4 @@
-j# dotfiles/.config/nvim
+# Neovim configuration
 
 > [!CAUTION]
 > Starting from Neovim version 0.11.0 and above, `nvim-lspconfig` is no longer required. A migration with a breaking change will be implemented in the future.
