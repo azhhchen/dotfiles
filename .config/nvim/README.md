@@ -1,4 +1,4 @@
-# dotfiles/.config/nvim
+j# dotfiles/.config/nvim
 
 > [!CAUTION]
 > Starting from Neovim version 0.11.0 and above, `nvim-lspconfig` is no longer required. A migration with a breaking change will be implemented in the future.
@@ -13,11 +13,13 @@ Welcome to my **Neovim Configuration**! 🚀
 
 This setup is designed for **modern, efficient, and minimalistic** development. With a focus on performance and usability, it provides a **lightweight yet powerful** workflow.  
 
+The goal of this Neovim configuration is to achieve a functional coding experience with the **minimum** number of plugins.
+
 ### ⚡ Performance
 > [!NOTE]
 > **Equipment:** 2019 MacBook Pro 16' (i9-9900HK) / Thinkpad X1 Carbon 6th gen (i7-8550U)
 - **Startup Time:**  
-  - **25~40ms** (without opening files)  
+  - **25~30ms** (without opening files)  
   - **70~150ms** (depending on the file type)  
 
 ### ✨ Features
@@ -58,10 +60,6 @@ NVIM_APPNAME=azhhchen/dotfiles/.config/nvim nvim
 ### 🎨 Colorscheme
 - [craftzdog/solarized-osaka.nvim](https://dotfyle.com/plugins/craftzdog/solarized-osaka.nvim)  
 - [Mofiqul/vscode.nvim](https://dotfyle.com/plugins/Mofiqul/vscode.nvim)  
-
-### 💬 Commenting
-- [echasnovski/mini.comment](https://dotfyle.com/plugins/echasnovski/mini.comment)  
-- [JoosepAlviste/nvim-ts-context-commentstring](https://dotfyle.com/plugins/JoosepAlviste/nvim-ts-context-commentstring)  
 
 ### ✍ Editing Support
 - [folke/snacks.nvim](https://dotfyle.com/plugins/folke/snacks.nvim)  
@@ -105,6 +103,11 @@ Currently Configured:
 - **Lua** (using `lua-language-server`)
 - **Rust** (`rust-analyzer`)
 
+## ✒️ TODO List
+
+- [x] migrate to `blink.cmp`
+- [ ] Remove `nvim-lspconfig` and migrate to Neovim's built-in LSP API.
+- [ ] Add `conform.nvim` and `nvim-lint`
 
 ## 📝 Notes & Contribution
 
