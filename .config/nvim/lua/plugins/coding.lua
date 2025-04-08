@@ -47,36 +47,6 @@ return {
       markdown = true,
     }
   },
-  { -- Comments
-    "echasnovski/mini.comment",
-    version = false,
-    dependencies = {
-      { -- This require treesitter
-        "JoosepAlviste/nvim-ts-context-commentstring",
-        lazy = true,
-        opts = { enable_autocmd = false },
-      }
-    },
-    keys = {
-      { "<leader>/", desc = "Comment", mode = { "n" , "v" } },
-      { "<leader>//", desc = "Comment toggle current line" }
-    },
-    opts = {
-      mappings = {
-        -- Toggle comment
-        -- exampe: `<Space>/ip` - comment inner paragraph
-        comment = '<leader>/',
-        comment_line = '<leader>//', -- Toggle current line
-        comment_visual = '<leader>/', -- Visual model
-        textobject = '<leader>/', -- Treat this as a vim-textobject
-      },
-      options = {
-        custom_commentstring = function()
-          return require("ts_context_commentstring.internal").calculate_commentstring() or vim.bo.commentstring
-        end,
-      },
-    }
-  },
   { -- Surround
     "echasnovski/mini.surround",
     version = false,
