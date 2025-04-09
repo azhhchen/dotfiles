@@ -22,7 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'justinmk/vim-sneak'
-Plug 'jayli/vim-easycomplete'
+" Plug 'jayli/vim-easycomplete'  <- Too buggy
 " Plug 'SirVer/ultisnips'        <- This needs python support and macOS version
 " Plug 'honza/vim-snippets'      <-  does not have it (WTF Apple)
 
