@@ -20,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 "=== Coding ==="
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'justinmk/vim-sneak'
 " Plug 'jayli/vim-easycomplete'  <- Too buggy
