@@ -1,3 +1,10 @@
+" Check vim-plug installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent! !curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  echo "vim-plug has been installedk"
+endif
+
 call plug#begin('~/.vim/plugged')
 
 "=== UI ==="
