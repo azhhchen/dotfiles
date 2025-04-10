@@ -14,7 +14,7 @@ return {
         enabled = true,
         timeout = 2000, -- shorter than default 3000 ms
       },
-      -- quickfile = { enabled = true },
+      quickfile = { enabled = true },
     },
     keys = {
       { "<leader>rf", function() Snacks.rename.rename_file() end, desc = "Rename File" },
