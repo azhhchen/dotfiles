@@ -73,11 +73,17 @@ return { -- lspconfig
       -- Check out https://github.com/neovim/neovim/pull/31031
 
       -- LSP capabilities
-      local lspconfig = require("lspconfig")
-      for server, config in pairs(opts.servers) do
-        config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-        lspconfig[server].setup(config)
-      end
+      local original_capabilities = vim.lsp.protocol.make_client_capabilities()
+      local capabilities = require("blink.cmp").get_lsp_capabilities(original_capabilities)
+      require("mason-lspconfig").setup({
+        handlers = {
+          function(server_name)
+            local server = opts.servers[server_name] or {}
+            server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+            require("lspconfig")[server_name].setup(server)
+          end,
+        },
+      })
 
       -- LSP keymap
       vim.api.nvim_create_autocmd("LspAttach", {
