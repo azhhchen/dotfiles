@@ -16,7 +16,7 @@ return { -- lspconfig
         virtual_text = {
           spacing = 5,
           source = "if_many",
-          prefix ="●",
+          prefix = "●",
         },
         severity_sort = true,
         float = {
@@ -56,7 +56,6 @@ return { -- lspconfig
       },
     },
     config = function(_, opts)
-
       -- Diagnostic symbols
       if vim.fn.has("nvim-0.10.0") == 0 then
         if type(opts.diagnostics.signs) ~= "boolean" then
@@ -95,14 +94,14 @@ return { -- lspconfig
           end
 
           -- LSP Start / Stop / Restart
-          map("<leader>l+", ":LspStart<cr>" ,"Start")
-          map("<leader>l-", ":LspStop<cr>","Stop")
-          map("<leader>l=", ":LspRestart<cr>","Restart")
+          map("<leader>l+", ":LspStart<cr>", "Start")
+          map("<leader>l-", ":LspStop<cr>", "Stop")
+          map("<leader>l=", ":LspRestart<cr>", "Restart")
 
           -- Snacks picker
           map("gd", Snacks.picker.lsp_definitions, "Goto Definition")
           map("gD", Snacks.picker.lsp_declarations, "Goto Declaration")
-          map("gr", Snacks.picker.lsp_references, "References")
+          map("gR", Snacks.picker.lsp_references, "References")
           map("gI", Snacks.picker.lsp_implementations, "Goto Implementation")
           map("gy", Snacks.picker.lsp_type_definitions, "Goto T[y]pe Definition")
           map("<leader>lc", Snacks.picker.lsp_config, "Config")
@@ -114,7 +113,6 @@ return { -- lspconfig
           map("<leader>ca", vim.lsp.buf.code_action, "Code Action", { "n", "x" })
           map("<leader>cr", vim.lsp.buf.rename, "Rename")
           map("<leader>cf", vim.lsp.buf.format, "Format")
-
         end,
       })
     end,
