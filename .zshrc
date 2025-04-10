@@ -6,7 +6,7 @@ if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
 fi
 
 ## Variable
-# export EDITOR="nvim"
+export EDITOR="nvim"
 
 ## PATH
 export PATH="$PATH:$HOME/.script"       # For custom script
@@ -21,7 +21,7 @@ export SAVEHIST=200
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 ## Aliases
-# alias vim='nvim'
+alias vim='nvim'
 alias mv='mv -i'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
