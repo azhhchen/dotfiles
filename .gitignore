@@ -51,3 +51,4 @@ lazy-lock.json
 
 # Other
 .vscode/
+.zsh_history
