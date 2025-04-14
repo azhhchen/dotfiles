@@ -49,6 +49,9 @@ ehthumbs.db
 .luarc.json
 lazy-lock.json
 
+# zsh
+.zsh_history
+.zsh_sessions
+
 # Other
 .vscode/
-.zsh_history
