@@ -11,7 +11,7 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '→ %b '
 setopt PROMPT_SUBST
 NEWLINE=$'\n'
-PROMPT='󰇄 %m: %F{cyan}%~%f %F{yellow}${vcs_info_msg_0_}%f ${NEWLINE}%F{green}$%f '
+PROMPT='%m: %F{cyan}%~%f %F{yellow}${vcs_info_msg_0_}%f ${NEWLINE}%F{green}$%f '
 
 ## Aliases
 alias ll='eza -l -g --icons=always --long --no-filesize'
