@@ -1,5 +1,10 @@
 ## XDG_CONFIG_HOME
 export XDG_CONFIG_HOME="$HOME/.config"
+
+if [[ "$(uname)" == "Darwin" ]]; then
+  export XDG_CACHE_HOME="$HOME/Library/Caches"
+fi
+
 ## zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
