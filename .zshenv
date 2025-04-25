@@ -3,6 +3,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 if [[ "$(uname)" == "Darwin" ]]; then
   export XDG_CACHE_HOME="$HOME/Library/Caches"
+elif [[ "$(uname)" == "Linux" ]]; then
+  export XDG_CACHE_HOME="$HOME/.cache"
 fi
 
 ## zsh
@@ -14,6 +16,9 @@ export SAVEHIST=200
 ## path
 export PATH="$PATH:$HOME/.script"       # For custom script
 export PATH="$PATH:$HOME/.cargo/bin"	  # For rust
+
+## python
+export PYTHON_HISTORY="$XDG_CACHE_HOME/python_history"
 
 ####### External Tool #######
 
