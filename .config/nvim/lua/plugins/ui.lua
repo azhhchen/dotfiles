@@ -78,7 +78,7 @@ return {
             symbols = {
               error = " ",
               warn = " ",
-              info = "",
+              info = " ",
               hint = " ",
             },
           },
