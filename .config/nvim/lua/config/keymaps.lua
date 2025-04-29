@@ -4,10 +4,6 @@
 local opts = { noremap = true, silent = true }
 local keymap = vim.keymap.set
 
--- This will force you use "count" instead of key-repeat.
--- If you don't want this restriction, just comment it out.
-require("chxun.discipline").patient()
-
 -- Register
 keymap({ "n", "v" }, "<leader>c", '"_c')
 keymap({ "n", "v" }, "<leader>C", '"_C')
