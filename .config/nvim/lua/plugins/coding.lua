@@ -33,6 +33,9 @@ return {
     },
     config = function(_, opts)
       require("blink.cmp").setup(opts)
+
+      -- LSP capabilities
+      vim.lsp.config('*', { capabilities = require('blink.cmp').get_lsp_capabilities() })
     end,
   },
   { -- Autopairs
