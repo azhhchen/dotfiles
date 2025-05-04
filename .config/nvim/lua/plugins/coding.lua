@@ -4,17 +4,14 @@ return {
     dependencies = {
       "rafamadriz/friendly-snippets",
     },
-    -- enabled = false, -- For debugging
     event = "InsertEnter",
     version = '1.*',
     opts_extend = { "sources.default" },
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
     opts = {
       enabled = function()
         -- Disabled in filetype
         local filetype = vim.bo[0].filetype
-        if filetype == "TelescopePrompt" or filetype == "minifiles" or filetype == "snacks_picker_input" then
+        if filetype == "minifiles" or filetype == "snacks_picker_input" then
           return false
         end
         return true
@@ -25,7 +22,7 @@ return {
       fuzzy = { implementation = "prefer_rust_with_warning" },
       keymap = { -- See :h blink-cmp-config-keymap
         preset = "enter",
-        ["<C-y>"] = { "select_and_accept" },
+        ["<C-h>"] = { 'show', 'show_documentation', 'hide_documentation' },
       },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
