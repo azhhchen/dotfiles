@@ -18,16 +18,4 @@ return {
       vim.cmd([[colorscheme solarized-osaka]])
     end
   },
-  { -- VSCode theme
-    -- Remember change lualine theme for consistent
-    "Mofiqul/vscode.nvim",
-    enabled = false,
-    config = function()
-      require("vscode").setup({
-        transparent = false,
-        italic_comments = false,
-        terminal_colors = true,
-      })
-    end
-  }
 }
