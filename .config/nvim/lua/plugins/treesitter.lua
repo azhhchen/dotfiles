@@ -11,7 +11,6 @@ return {
       auto_install = false,
       ensure_installed = {
         "bash",
-        "cpp",
         "css",
         "html",
         "javascript",
