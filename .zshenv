@@ -13,13 +13,6 @@ export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTSIZE=200
 export SAVEHIST=200
 
-## path
-export PATH="$PATH:$HOME/.script"       # For custom script
-export PATH="$PATH:$HOME/.cargo/bin"	  # For rust
-
-## python
-export PYTHON_HISTORY="$XDG_CACHE_HOME/python_history"
-
 ####### External Tool #######
 
 ## editor
