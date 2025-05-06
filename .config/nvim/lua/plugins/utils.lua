@@ -10,17 +10,17 @@ return {
       indent = { enabled = true },
       lazygit = { enabled = true },
       scope = { enabled = true },
-      notifier = { -- This will replace notify.nvim
+      notifier = {      -- This will replace notify.nvim
         enabled = true,
         timeout = 2000, -- shorter than default 3000 ms
       },
       quickfile = { enabled = true },
     },
     keys = {
-      { "<leader>rf", function() Snacks.rename.rename_file() end, desc = "Rename File" },
+      { "<leader>rf", function() Snacks.rename.rename_file() end,    desc = "Rename File" },
       { "<leader>nh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
-      { "<leader>n-", function() Snacks.notifier.hide() end, desc = "Dismiss All Notification"},
-      { "<leader>gL", function() Snacks.lazygit() end, desc = "Lazygit" },
+      { "<leader>n-", function() Snacks.notifier.hide() end,         desc = "Dismiss All Notification" },
+      { "<leader>gL", function() Snacks.lazygit() end,               desc = "Lazygit" },
     }
   },
   { -- Icons

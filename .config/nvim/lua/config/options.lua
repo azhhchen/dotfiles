@@ -57,13 +57,13 @@ vim.opt.undofile = true -- Save undo history
 vim.opt.writebackup = false
 
 -- Other
-vim.g.netrw_banner = 0 -- do not display info on the top of window
+vim.g.netrw_banner = 0                -- do not display info on the top of window
 vim.opt.clipboard:append({ "unnamedplus" })
 vim.opt.formatoptions:append({ "r" }) -- add asterisks in block comments
 -- vim.opt.shell = "zsh"
-vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
+vim.opt.path:append({ "**" })         -- Finding files - Search down into subfolders
 vim.opt.wildignore:append({ "*/node_modules/*" })
-vim.opt.whichwrap:append("<>hl") -- h, l goto next/previous line when cursor is begin/end of line
+vim.opt.whichwrap:append("<>hl")      -- h, l goto next/previous line when cursor is begin/end of line
 vim.opt.fillchars = {
   foldopen = "",
   foldclose = "",
@@ -81,4 +81,3 @@ end, {
   "node_provider"
 })
 vim.opt.mouse = ""
-
