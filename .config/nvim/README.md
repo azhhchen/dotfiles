@@ -1,106 +1,68 @@
-# Neovim configuration
+# Neovim Configuration
 
-> [!CAUTION]
-> Starting from Neovim version 0.11.0 and above, `nvim-lspconfig` is no longer required. A migration with a breaking change will be implemented in the future.
+> [!IMPORTANT]
+> Starting from **Neovim 0.11.0** and above, `nvim-lspconfig` is **no longer required**. This setup uses Neovim’s built-in LSP API directly.
 
-<a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/azhhchen/dotfiles-config-nvim"><img src="https://dotfyle.com/azhhchen/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
+## 🌟 Overview
 
-## 🌟 Introduction
+Welcome to my **Neovim configuration**! 🚀
+This setup is designed for a **modern, efficient, and minimalist** development experience. With a strong focus on performance and usability, it delivers a **lightweight yet powerful** coding workflow.
 
-Welcome to my **Neovim Configuration**! 🚀
+The goal is to achieve a functional development environment using the **fewest plugins possible** — reducing bloat while maximizing productivity.
 
-This setup is designed for **modern, efficient, and minimalistic** development. With a focus on performance and usability, it provides a **lightweight yet powerful** workflow.
+## ⚡ Performance
 
-The goal of this Neovim configuration is to achieve a functional coding experience with the **minimum** number of plugins.
-
-### ⚡ Performance
 > [!NOTE]
-> **Equipment:** 2019 MacBook Pro 16' (i9-9900HK) / Thinkpad X1 Carbon 6th gen (i7-8550U)
-- **Startup Time:**
-  - **25~30ms** (without opening files)
-  - **70~150ms** (depending on the file type)
+> **Tested on:**
+> - 2019 MacBook Pro 16" (Intel i9-9900HK)
+> - ThinkPad X1 Carbon 6th Gen (Intel i7-8550U)
 
-### ✨ Features
-- 🎨 **Customizable Colorschemes** (Solarized Osaka, VSCode Theme)
+- **Startup Time**:
+  - ~25–30ms (without opening files)
+  - ~70–150ms (depending on file type and LSP startup)
+
+## ✨ Features
+
 - ⚡ **Optimized Performance** with Lazy Loading
-- 🔥 **Fully Integrated LSP Support** (`native neovim lsp`)
-- 📂 **Intuitive File Navigation** (`mini.files`)
-- ✍  **Enhanced Editing Experience** (Auto-pairs, Commenting, Surround Editing)
-- 💜 **Syntax Highlighting & Code Parsing** (`nvim-treesitter`)
+- 🔥 **Fully Integrated LSP Support** (built-in Neovim LSP)
 - 🛠 **Easy LSP Management** with `mason.nvim`
+- 💜 **Syntax Highlighting & Code Parsing** via `nvim-treesitter`
+- ✍ **Enhanced Editing Experience** (Auto-pairs, Commenting, Surround Editing)
+- 📂 **Intuitive File Navigation** using `mini.files`
+- 🎨 **Customizable Colorschemes** (Solarized Osaka, VSCode Theme)
 - 🤝 **Efficient Statusline** powered by `lualine.nvim`
-- 🎭 **Improved UI Feedback** via `noice.nvim`
-
+- 🎭 **Improved UI Feedback** with `noice.nvim`
 
 ## 🛠 Installation
 
-### **Prerequisites**
-- **Neovim 0.9+**
-- **Git** installed
+### Prerequisites
+
+- **Neovim 0.11+**
+- **Git**
+- Optional but recommended: `fzf`, `ripgrep (rg)`, `fd`
 
 > [!WARNING]
-> Do not install this configuration without reviewing the code first. If you choose to proceed without verification, you do so at your own risk.
+> Do not install this configuration without reviewing the code first.  Proceed at your own risk if you choose not to verify it.
 
 ### 💽 Install & Run
-Clone the repository:
-```sh
-git clone git@github.com:azhhchen/dotfiles ~/.config/azhhchen/dotfiles
-```
 
-Launch Neovim with this configuration:
-```sh
-NVIM_APPNAME=azhhchen/dotfiles/.config/nvim nvim
-```
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/azhhchen/.dotfiles ~/.config/nvim
+   ```
 
-
-## 🛆 Plugin Overview
-
-### 🎨 Colorscheme
-- [craftzdog/solarized-osaka.nvim](https://dotfyle.com/plugins/craftzdog/solarized-osaka.nvim)
-- [Mofiqul/vscode.nvim](https://dotfyle.com/plugins/Mofiqul/vscode.nvim)
-
-### ✍ Editing Support
-- [folke/snacks.nvim](https://dotfyle.com/plugins/folke/snacks.nvim)
-- [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
-
-### 📂 File Explorer
-- [echasnovski/mini.files](https://dotfyle.com/plugins/echasnovski/mini.files)
-
-### 🔣 Icons
-- [echasnovski/mini.icons](https://dotfyle.com/plugins/echasnovski/mini.icons)
-
-### ⚙️ LSP Installer
-- [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
-
-### 🛠 Neovim Development
-- [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
-
-### 📦 Plugin Manager
-- [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
-
-### ✂️ Snippets
-- [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
-
-### 📊 Statusline
-- [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
-
-### 💜 Syntax Highlighting
-- [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
-- [echasnovski/mini.surround](https://dotfyle.com/plugins/echasnovski/mini.surround)
-
-### 🛠 Utility
-- [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
-
+2. Or run Neovim with a custom config path:
+  ```sh
+  NVIM_APPNAME=azhhchen/.dotfiles/.config/nvim nvim
+  ```
 
 ## 🌐 Language Servers
 
 Currently Configured:
-- **Lua** (using `lua-language-server`)
-- **Rust** (`rust-analyzer`)
+- **Lua** — powered by `lua-language-server`
+- **Rust** — powered by `rust-analyzer`
 
-## ✒️ TODO List
+## ✒️ TODO
 
 - [x] migrate to `blink.cmp`
 - [x] Remove `nvim-lspconfig` and migrate to Neovim's built-in LSP API.
