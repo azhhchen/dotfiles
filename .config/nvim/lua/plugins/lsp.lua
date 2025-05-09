@@ -1,6 +1,6 @@
 return {
   { -- For managing lsp
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     event = { "BufReadPre", "BufNewFile" },
     cmd = "Mason",
     keys = { { "<leader>m", "<cmd>Mason<cr>", desc = "Mason" } },
