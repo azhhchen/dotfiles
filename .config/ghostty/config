@@ -5,7 +5,7 @@ window-padding-balance = true
 window-colorspace = display-p3
 
 # Color
-theme = "Solarized Dark - Patched"
+theme = dark:solarized-osaka-dark,light:solarized-osaka-light
 background-opacity = 0.8
 background-blur = 20
 background = #031219
