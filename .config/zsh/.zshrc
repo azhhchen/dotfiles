@@ -1,10 +1,3 @@
-## Don't let masOS Terminal.app load any setting
-if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
-  alias nvim='nvim --clean'
-  alias vim='vim --clean'
-  return
-fi
-
 ## Prompt
 autoload -Uz vcs_info
 precmd() { vcs_info }

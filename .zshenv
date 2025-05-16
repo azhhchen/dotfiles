@@ -1,17 +1,15 @@
-## XDG_CONFIG_HOME
+## PATH
 export XDG_CONFIG_HOME="$HOME/.config"
-
-if [[ "$(uname)" == "Darwin" ]]; then
-  export XDG_CACHE_HOME="$HOME/Library/Caches"
-elif [[ "$(uname)" == "Linux" ]]; then
-  export XDG_CACHE_HOME="$HOME/.cache"
-fi
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share/"
+export XDG_STATE_HOME="$HOME/.local/state/"
+export DOTFILES="$HOME/.dotfiles"
 
 ## zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zsh_history"
-export HISTSIZE=200
-export SAVEHIST=200
+export HISTSIZE=1000
+export SAVEHIST=1000
 
 ####### External Tool #######
 
@@ -20,18 +18,12 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 ## fzf
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-  --highlight-line \
-  --info=inline-right \
-  --ansi \
-  --layout=reverse \
-  --border=none
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --highlight-line --info=inline-right --ansi \
   --color=bg+:#002c38 \
   --color=bg:#001419 \
   --color=border:#063540 \
