@@ -15,8 +15,8 @@ keymap("x", "<leader>p", '"_dP')
 keymap("n", "x", '"_x')
 
 -- Move things
-keymap("v", "<A-j>", ":m '>+1<cr>gv=gv", opts)
-keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", opts)
+keymap("v", "<A-up>", ":m '<-2<cr>gv=gv", opts)
+keymap("v", "<A-down>", ":m '>+1<cr>gv=gv", opts)
 keymap("n", "J", "mzJ`z")
 keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
