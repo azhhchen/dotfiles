@@ -1,2 +1,3 @@
 [manager]
-show_hidden = true
+show_hidden    = true
+title_format   = "{cwd}"
