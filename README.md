@@ -1,68 +1,60 @@
-# Dotfiles Configuration
+# 🌱 Dotfiles Configuration
 
-This repository contains my personal dotfiles, including configurations for various tools and applications. It is designed to be easily managed and deployed across different systems.
+Welcome to my personal dotfiles repo — the digital toolbox powering my daily workflow. Designed primarily for Arch Linux (with a side of Ubuntu).
 
-## Included Configurations
+## 🖥️ Platform
 
-- **Git**: `.gitconfig`, `.gitignore`
-- **Zsh**: `.zshrc`
-- **Starship**: `starship.toml` (prompt configuration)
-- **Ghostty**: Terminal configuration
-- **Neovim**: Custom `init.lua` and plugin settings
-- **Vim**: Legacy Vim setup with plugins and keymaps
-- **Tmux**: `tmux.conf`, status line, and theme settings
-- **Yazi**: File manager configuration
-- **Zed**: Keybindings and settings for Zed editor
-- **VS Code**: Keybindings and settings
-- **Custom Scripts**: Stored in `.script/`
+- **OS**: Arch Linux (daily driver), Ubuntu (sidekick)
+- **Machine**: ThinkPad X1 Carbon Gen 6, Macbook Pro 16 inch (2019)
 
-## Installation
+## 🧰 What's Inside?
 
-To set up these dotfiles on a new system, follow these steps:
+Here's a sneak peek into my curated setup:
 
-1. **Clone the repository**:
+- **Git** – `.gitconfig`, `.gitignore` for clean commits and global sanity  
+- **Zsh** –  with aliases, plugins, and productivity hacks  
+- ~**Starship**~ – (deprecated, switch to original prompt ⚰️)  
+- **Ghostty** – My terminal, styled and snappy  
+- **Neovim** – Lua-configured `init.lua`, plugin ecosystem tailored for speed  
+- **Vim** – Legacy setup, still usable and customized  
+- **Tmux** – Tiling terminal multiplexing wizardry 🧙‍♂️  
+- **Yazi** – A fast and minimal file manager config  
+- **Zed** – Keybindings and tweaks for a lightweight coding flow (testing)
+- **VS Code** – Custom keymaps and user settings  
+- **Scripts** – Handy tools in `.script/` to automate the boring stuff
+
+---
+
+## ⚙️ Installation Guide
+
+Want to get rolling with this setup? Here's how:
+
+1. **Clone the repo**  
    ```sh
-   git clone --recursive https://github.com/your-username/dotfiles.git ~/.dotfiles
-   cd ~/.dotfiles
+   git clone --recursive https://github.com/azhhchen/.dotfiles.git ~/.dotfiles
    ```
+   
+2. **Install dependencies**
+   
+   Required tools: `zsh`, `tmux`, `neovim`, `fzf`
+   
+4. **Link configuration**
 
-2. **Install required dependencies**:
-   - `stow` (for managing symlinks)
-   - `zsh`, `tmux`, `neovim`, `fzf`, `starship`, etc.
+   Use `stow`, `chezmoi`, or just symlink them manually. Whatever suits your flow.
 
-   On macOS (using Homebrew):
-   ```sh
-   brew install stow zsh tmux neovim fzf starship
-   ```
+5. Done. You're all set. Now go write some awesome code. 🚀
 
-   On Arch Linux:
-   ```sh
-   sudo pacman -S stow zsh tmux neovim fzf starship
-   ```
+## 📌 To-Do
+- [x] Neovim is looking good!
+- [ ] Polish Tmux config and statusline
+- [ ] Write a user-friendly installer script
+- [ ] Ricing Hyprland config for a tiling WM dream on Arch
 
-3. **Use `stow` to symlink configurations** or just manually link to correct path
+## 🤝 Contributions
 
-4. *Happy coding*!!
+Spotted something broken or have a cool improvement? Fork away, open a PR, or just shoot over suggestions. Sharing is caring!
 
-## To-Do List
-
-- [x] Configure Neovim
-- [x] Add Tmux configuration
-- [ ] Add Karabiner configuration (for macOS key remapping)
-- [ ] Write an installation script for easier setup
-- [ ] Add Hyprland configuration for Arch Linux
-
-
-## Additional Notes
-
-- **Neovim**: Uses `lazy.nvim` for plugin management.
-- **Tmux**: Custom themes and status bar configuration.
-- **Ghostty**: Configuration for a better terminal experience.
-
-## Contributions
-
-Feel free to fork, modify, and contribute to this dotfile setup!
-
-## License
-
-WTFPL
+## ⚖️ License
+> WTFPL – Do what the f*** you want to.
+> 
+> Hack it, break it, improve it — it's yours now.
