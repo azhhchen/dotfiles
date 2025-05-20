@@ -50,6 +50,7 @@ ehthumbs.db
 lazy-lock.json
 
 # zsh
+.zcompdump
 .zsh_history
 .zsh_sessions
 

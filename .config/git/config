@@ -24,6 +24,8 @@
     tool = nvimdiff
 [github]
     user = azhhchen
+[init]
+	defaultBranch = main
 [hub]
     protocol = https
 [push]
