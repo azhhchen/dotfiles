@@ -18,10 +18,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 ## fzf
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
-export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --highlight-line --info=inline-right --ansi \
   --color=bg+:#002c38 \
@@ -41,6 +37,10 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --highlight-line
   --color=separator:#063540 \
   --color=spinner:#c94c16 \
 "
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 ## bat
 export BAT_THEME='Solarized (dark)'
